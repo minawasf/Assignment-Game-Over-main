@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+        <!-- Font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+        <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+        <!--  style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="primary-view">
+        <div class="banner-wrapper">
+            <img src=".//images/image.png" 
+                 class="w-100" 
+                 alt="صورة الألعاب">
+        </div>
+
+        <nav class="navbar navbar-expand-lg topbar-navigation position-sticky top-0 z-3 col-md-6 col-lg-9">
+            <div class="container">
+                <h5 class="navbar-brand mb-0 text-uppercase brand-title">
+                    <img src=".//images/logo.png" 
+                         alt="الشعار" 
+                         style="max-width: 40px"> Game Reviews</h5>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#mainNavigation" 
+                        aria-controls="mainNavigation" 
+                        aria-expanded="false" 
+                        aria-label=" ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 category-list small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link current-tab text-uppercase" aria-current="page" data-filter="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-filter="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-filter="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-filter="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-filter="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-filter="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5 main-content">
+            <section class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="itemsContainer"></div>
+            </section>
+        </main>
+    </div>
+
+    <div class="info-panel d-none">
+        <div class="container">
+            <header class="hstack justify-content-between">
+                <h1 class="text-center h3 py-4">Details Game</h1>
+                <button class="btn-close btn-close-white" id="closePanel"></button>
+            </header>
+            <div class="row g-4" id="panelContent"></div>
+        </div>
+    </div>
+
+    <div class="spinner-overlay d-none">
+        <span class="rotating-spinner"></span>
+    </div>
+
+     <!-- main js-->
+    <script src="js/main.js"></script>
+     <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
